@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <a href="Admin/Default.aspx">vai!!</a>
+    <a href="Admin/Default.aspx">vai!|!</a>
     </div>
     </form>
 </body>
