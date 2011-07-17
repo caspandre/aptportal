@@ -15,7 +15,7 @@
         <asp:Label ID="nomeEmail" runat="server"></asp:Label>
     </h2>
     <p>
-        Inserire il corpo della mail nel box sottostante, i seguenti elementi sono delle variabili e saranno sostituiti con i relativi valori:
+       Inserire il corpo della mail nel box sottostante, i seguenti elementi sono delle variabili e saranno sostituiti con i relativi valori:
         <li>
             #nome# : nome del proprietario.
         </li>
