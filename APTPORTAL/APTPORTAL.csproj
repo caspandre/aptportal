@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15EFA9-856E-439C-95D6-F6F29E9228F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APTPORTAL</RootNamespace>
+    <AssemblyName>APTPORTAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50508.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Downloads\itextsharp-all-5.1.0\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Admin\Campi.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\GestioneEmail.aspx" />
+    <Content Include="Admin\GestionePacchetti.aspx" />
+    <Content Include="Admin\GestionePrezzoPacchetto.aspx" />
+    <Content Include="Admin\GestioneSocieta.aspx" />
+    <Content Include="Admin\GestioneStruttura.aspx" />
+    <Content Include="Admin\GestioneTemplateEmail.aspx" />
+    <Content Include="Admin\InviaMail.aspx" />
+    <Content Include="Admin\ListaSocieta.aspx" />
+    <Content Include="Admin\NuovaSocieta.aspx" />
+    <Content Include="Admin\NuovoPacchetto.aspx" />
+    <Content Include="Admin\RicercaSocieta.aspx" />
+    <Content Include="Admin\RicercaStruttura.aspx" />
+    <Content Include="Admin\Servizi.aspx" />
+    <Content Include="Admin\Societa.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\APTPORTAL.dll" />
+    <Content Include="bin\APTPORTAL.pdb" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="css\GestioneSocieta.css" />
+    <Content Include="css\GestioneStruttura.css" />
+    <Content Include="css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="css\redmond\jquery-ui-1.8.13.custom.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="css\Site2.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\icone\Add.png" />
+    <Content Include="images\icone\Applications.png" />
+    <Content Include="images\icone\Backward.png" />
+    <Content Include="images\icone\Ball Blue.png" />
+    <Content Include="images\icone\Ball Green.png" />
+    <Content Include="images\icone\Ball Red.png" />
+    <Content Include="images\icone\Ball Yellow.png" />
+    <Content Include="images\icone\Book.png" />
+    <Content Include="images\icone\Burn.png" />
+    <Content Include="images\icone\Cancel.png" />
+    <Content Include="images\icone\CD.png" />
+    <Content Include="images\icone\Chart.png" />
+    <Content Include="images\icone\Chat Bubble Alt.png" />
+    <Content Include="images\icone\Chat Bubble.png" />
+    <Content Include="images\icone\Checkmark.png" />
+    <Content Include="images\icone\Connect.png" />
+    <Content Include="images\icone\Copy.png" />
+    <Content Include="images\icone\Cut.png" />
+    <Content Include="images\icone\Delete.png" />
+    <Content Include="images\icone\Desktop Alt.png" />
+    <Content Include="images\icone\Desktop.png" />
+    <Content Include="images\icone\Document.png" />
+    <Content Include="images\icone\Down.png" />
+    <Content Include="images\icone\Edit Alt.png" />
+    <Content Include="images\icone\Edit.png" />
+    <Content Include="images\icone\Favorites Add.png" />
+    <Content Include="images\icone\Favorites Remove.png" />
+    <Content Include="images\icone\Favorites.png" />
+    <Content Include="images\icone\Folder Alt.png" />
+    <Content Include="images\icone\Folder.png" />
+    <Content Include="images\icone\Forward.png" />
+    <Content Include="images\icone\Globe Alt.png" />
+    <Content Include="images\icone\Globe.png" />
+    <Content Include="images\icone\Harddisk.png" />
+    <Content Include="images\icone\Help Alt.png" />
+    <Content Include="images\icone\Help.png" />
+    <Content Include="images\icone\History.png" />
+    <Content Include="images\icone\Home.png" />
+    <Content Include="images\icone\Image.png" />
+    <Content Include="images\icone\Information.png" />
+    <Content Include="images\icone\Left.png" />
+    <Content Include="images\icone\Light Bulb Off.png" />
+    <Content Include="images\icone\Light Bulb On.png" />
+    <Content Include="images\icone\Mail Alt.png" />
+    <Content Include="images\icone\Mail.png" />
+    <Content Include="images\icone\Music.png" />
+    <Content Include="images\icone\Network.png" />
+    <Content Include="images\icone\OK.png" />
+    <Content Include="images\icone\Paint.png" />
+    <Content Include="images\icone\Paste.png" />
+    <Content Include="images\icone\Pause.png" />
+    <Content Include="images\icone\Pencil.png" />
+    <Content Include="images\icone\Phone.png" />
+    <Content Include="images\icone\Play.png" />
+    <Content Include="images\icone\Print.png" />
+    <Content Include="images\icone\Protection.png" />
+    <Content Include="images\icone\Recycle.png" />
+    <Content Include="images\icone\Refresh.png" />
+    <Content Include="images\icone\Remove.png" />
+    <Content Include="images\icone\Right.png" />
+    <Content Include="images\icone\Ruler.png" />
+    <Content Include="images\icone\Save As.png" />
+    <Content Include="images\icone\Save.png" />
+    <Content Include="images\icone\Seal.png" />
+    <Content Include="images\icone\Search.png" />
+    <Content Include="images\icone\Smiley.png" />
+    <Content Include="images\icone\Star.png" />
+    <Content Include="images\icone\Stop Alt.png" />
+    <Content Include="images\icone\Stop.png" />
+    <Content Include="images\icone\Tool.png" />
+    <Content Include="images\icone\Trash Empty.png" />
+    <Content Include="images\icone\Trash Full.png" />
+    <Content Include="images\icone\Up.png" />
+    <Content Include="images\icone\User Alt.png" />
+    <Content Include="images\icone\User.png" />
+    <Content Include="images\icone\Users.png" />
+    <Content Include="images\icone\View.png" />
+    <Content Include="images\icone\Warning.png" />
+    <Content Include="images\icone\Zoom In.png" />
+    <Content Include="images\icone\Zoom Out.png" />
+    <Content Include="images\icone_servizi\angolo_cottura.gif" />
+    <Content Include="images\icone_servizi\animani_dom_grandi.gif" />
+    <Content Include="images\icone_servizi\animani_dom_piccoli.gif" />
+    <Content Include="images\icone_servizi\animazione.gif" />
+    <Content Include="images\icone_servizi\aquagranda.gif" />
+    <Content Include="images\icone_servizi\area_giochi_bambini.gif" />
+    <Content Include="images\icone_servizi\ascensore.gif" />
+    <Content Include="images\icone_servizi\asciugatrice.gif" />
+    <Content Include="images\icone_servizi\asciuga_capelli.gif" />
+    <Content Include="images\icone_servizi\baby_sitter.gif" />
+    <Content Include="images\icone_servizi\balcone.gif" />
+    <Content Include="images\icone_servizi\bar.gif" />
+    <Content Include="images\icone_servizi\barbecue.gif" />
+    <Content Include="images\icone_servizi\beauty_farm.gif" />
+    <Content Include="images\icone_servizi\biliardo.gif" />
+    <Content Include="images\icone_servizi\camere.gif" />
+    <Content Include="images\icone_servizi\caminetto.gif" />
+    <Content Include="images\icone_servizi\cassaforte_camera.gif" />
+    <Content Include="images\icone_servizi\colazione_buffet.gif" />
+    <Content Include="images\icone_servizi\colazione_italiana.gif" />
+    <Content Include="images\icone_servizi\connessione_internet.gif" />
+    <Content Include="images\icone_servizi\convenzionato_ristoranti.gif" />
+    <Content Include="images\icone_servizi\cucina.gif" />
+    <Content Include="images\icone_servizi\deposito_sci_riscaldato.gif" />
+    <Content Include="images\icone_servizi\DE_tedesco.gif" />
+    <Content Include="images\icone_servizi\divano_letto.gif" />
+    <Content Include="images\icone_servizi\doccia_vasca.gif" />
+    <Content Include="images\icone_servizi\doccia.gif" />
+    <Content Include="images\icone_servizi\EN_inglese.gif" />
+    <Content Include="images\icone_servizi\ES_spagnolo.gif" />
+    <Content Include="images\icone_servizi\fitness.gif" />
+    <Content Include="images\icone_servizi\forno.gif" />
+    <Content Include="images\icone_servizi\frigo-bar.gif" />
+    <Content Include="images\icone_servizi\FR_francese.gif" />
+    <Content Include="images\icone_servizi\garage_coperto.gif" />
+    <Content Include="images\icone_servizi\giardino.gif" />
+    <Content Include="images\icone_servizi\GR_greco.gif" />
+    <Content Include="images\icone_servizi\handicappati.gif" />
+    <Content Include="images\icone_servizi\HR_croato.gif" />
+    <Content Include="images\icone_servizi\HU_ungherese.gif" />
+    <Content Include="images\icone_servizi\idromassaggio.gif" />
+    <Content Include="images\icone_servizi\info_point.gif" />
+    <Content Include="images\icone_servizi\internet_point.gif" />
+    <Content Include="images\icone_servizi\lavapanni.gif" />
+    <Content Include="images\icone_servizi\lavastoviglie.gif" />
+    <Content Include="images\icone_servizi\lavatrice.gif" />
+    <Content Include="images\icone_servizi\lavatrice_gettoni.gif" />
+    <Content Include="images\icone_servizi\letti.gif" />
+    <Content Include="images\icone_servizi\lettore_DVD.gif" />
+    <Content Include="images\icone_servizi\macchina_caffe.gif" />
+    <Content Include="images\icone_servizi\massaggi.gif" />
+    <Content Include="images\icone_servizi\menu_celiaci.gif" />
+    <Content Include="images\icone_servizi\menu_vegerariano.gif" />
+    <Content Include="images\icone_servizi\microonde.gif" />
+    <Content Include="images\icone_servizi\miniclub_fasce_orarie.gif" />
+    <Content Include="images\icone_servizi\mtb_disposizione.gif" />
+    <Content Include="images\icone_servizi\NO_norvegese.gif" />
+    <Content Include="images\icone_servizi\NO_smoking.gif" />
+    <Content Include="images\icone_servizi\parcheggio.gif" />
+    <Content Include="images\icone_servizi\parcheggio_coperto_moto.gif" />
+    <Content Include="images\icone_servizi\parcheggio_pullman.gif" />
+    <Content Include="images\icone_servizi\piazzola.gif" />
+    <Content Include="images\icone_servizi\piscina.gif" />
+    <Content Include="images\icone_servizi\PL_polacco.gif" />
+    <Content Include="images\icone_servizi\prenotazione_online.gif" />
+    <Content Include="images\icone_servizi\radio.gif" />
+    <Content Include="images\icone_servizi\ristorante_fumatori.gif" />
+    <Content Include="images\icone_servizi\ristorante_pubblico.gif" />
+    <Content Include="images\icone_servizi\RU_russo.gif" />
+    <Content Include="images\icone_servizi\sala_conferenze.gif" />
+    <Content Include="images\icone_servizi\sala_fumatori.gif" />
+    <Content Include="images\icone_servizi\sala_giochi.gif" />
+    <Content Include="images\icone_servizi\sala_lettore_DVD.gif" />
+    <Content Include="images\icone_servizi\sala_TV.gif" />
+    <Content Include="images\icone_servizi\sala_TV_SAT.gif" />
+    <Content Include="images\icone_servizi\sauna.gif" />
+    <Content Include="images\icone_servizi\scaldascarponi.gif" />
+    <Content Include="images\icone_servizi\servizio_navetta.gif" />
+    <Content Include="images\icone_servizi\ski_TV.gif" />
+    <Content Include="images\icone_servizi\SL_sloveno.gif" />
+    <Content Include="images\icone_servizi\solarium.gif" />
+    <Content Include="images\icone_servizi\speciale_bambini.gif" />
+    <Content Include="images\icone_servizi\stireria_lavanderia.gif" />
+    <Content Include="images\icone_servizi\stufa_maiolica.gif" />
+    <Content Include="images\icone_servizi\SV_svedese.gif" />
+    <Content Include="images\icone_servizi\televisione.gif" />
+    <Content Include="images\icone_servizi\televisione_schermo_piatt.gif" />
+    <Content Include="images\icone_servizi\tennis.gif" />
+    <Content Include="images\icone_servizi\tostapane.gif" />
+    <Content Include="images\icone_servizi\TR_turco.gif" />
+    <Content Include="images\icone_servizi\TV_SAT.gif" />
+    <Content Include="images\icone_servizi\uva.gif" />
+    <Content Include="images\icone_servizi\vasca.gif" />
+    <Content Include="images\icone_servizi\WC+doccia.gif" />
+    <Content Include="images\icone_servizi\WC.gif" />
+    <Content Include="images\icone_servizi\wellness.gif" />
+    <Content Include="images\icone_servizi\WiFi.gif" />
+    <Content Include="js\GestioneStruttura.js" />
+    <Content Include="js\jquery-1.4.1-vsdoc.js" />
+    <Content Include="js\jquery-1.4.1.js" />
+    <Content Include="js\jquery-1.4.1.min.js" />
+    <Content Include="js\jquery-1.5.1.min.js" />
+    <Content Include="js\jquery-ui-1.8.13.custom.min.js" />
+    <Content Include="js\Main.js" />
+    <Content Include="js\RicercaSocieta.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Campi.aspx.cs">
+      <DependentUpon>Campi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Campi.aspx.designer.cs">
+      <DependentUpon>Campi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneEmail.aspx.cs">
+      <DependentUpon>GestioneEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneEmail.aspx.designer.cs">
+      <DependentUpon>GestioneEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionePacchetti.aspx.cs">
+      <DependentUpon>GestionePacchetti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionePacchetti.aspx.designer.cs">
+      <DependentUpon>GestionePacchetti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionePrezzoPacchetto.aspx.cs">
+      <DependentUpon>GestionePrezzoPacchetto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionePrezzoPacchetto.aspx.designer.cs">
+      <DependentUpon>GestionePrezzoPacchetto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneSocieta.aspx.cs">
+      <DependentUpon>GestioneSocieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneSocieta.aspx.designer.cs">
+      <DependentUpon>GestioneSocieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneStruttura.aspx.cs">
+      <DependentUpon>GestioneStruttura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneStruttura.aspx.designer.cs">
+      <DependentUpon>GestioneStruttura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestioneTemplateEmail.aspx.cs">
+      <DependentUpon>GestioneTemplateEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestioneTemplateEmail.aspx.designer.cs">
+      <DependentUpon>GestioneTemplateEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InviaMail.aspx.cs">
+      <DependentUpon>InviaMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InviaMail.aspx.designer.cs">
+      <DependentUpon>InviaMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListaSocieta.aspx.cs">
+      <DependentUpon>ListaSocieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ListaSocieta.aspx.designer.cs">
+      <DependentUpon>ListaSocieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NuovaSocieta.aspx.cs">
+      <DependentUpon>NuovaSocieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NuovaSocieta.aspx.designer.cs">
+      <DependentUpon>NuovaSocieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NuovoPacchetto.aspx.cs">
+      <DependentUpon>NuovoPacchetto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NuovoPacchetto.aspx.designer.cs">
+      <DependentUpon>NuovoPacchetto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RicercaSocieta.aspx.cs">
+      <DependentUpon>RicercaSocieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RicercaSocieta.aspx.designer.cs">
+      <DependentUpon>RicercaSocieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RicercaStruttura.aspx.cs">
+      <DependentUpon>RicercaStruttura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RicercaStruttura.aspx.designer.cs">
+      <DependentUpon>RicercaStruttura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Servizi.aspx.cs">
+      <DependentUpon>Servizi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Servizi.aspx.designer.cs">
+      <DependentUpon>Servizi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Societa.aspx.cs">
+      <DependentUpon>Societa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Societa.aspx.designer.cs">
+      <DependentUpon>Societa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="InvioEmail.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icone_servizi\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49364</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

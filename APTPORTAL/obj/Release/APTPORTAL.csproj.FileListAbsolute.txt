@@ -1,0 +1,5 @@
+C:\Users\caspas\Desktop\aptportal\APTPORTAL\APTPORTAL\bin\APTPORTAL.dll
+C:\Users\caspas\Desktop\aptportal\APTPORTAL\APTPORTAL\bin\APTPORTAL.pdb
+C:\Users\caspas\Desktop\aptportal\APTPORTAL\APTPORTAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\caspas\Desktop\aptportal\APTPORTAL\APTPORTAL\obj\Release\APTPORTAL.dll
+C:\Users\caspas\Desktop\aptportal\APTPORTAL\APTPORTAL\obj\Release\APTPORTAL.pdb

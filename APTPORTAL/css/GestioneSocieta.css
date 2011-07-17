@@ -1,0 +1,11 @@
+﻿#cont_societa,#cont_utente
+{
+    float:left;
+    margin-right:50px;
+    width: 234px;
+}
+
+#cont_struttura
+{
+    clear:both;
+}
